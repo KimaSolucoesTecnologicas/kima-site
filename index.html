@@ -14,10 +14,21 @@
     <link rel="stylesheet" href="css/style.css" id="main-styles-link">
     <style>.ie-panel{display: none;background: #212121;padding: 10px 0;box-shadow: 3px 3px 5px 0 rgba(0,0,0,.3);clear: both;text-align:center;position: relative;z-index: 1;} html.ie-10 .ie-panel, html.lt-ie-10 .ie-panel {display: block;}
       .rd-nav-item .rd-nav-link:hover {
-        background-color: aliceblue;
-        padding: 10px;
+        border-bottom: 1px solid aliceblue;
+        padding: 2px;
         transition: 1s;
-        color: #212121;
+        color: aliceblue;
+      }
+      .section-diferenciais {
+        background-image: linear-gradient(to right, rgba(0, 0, 0, 0.384), black),url(./images/mulher-negra.jpg);
+        background-position: bottom right;
+        background-size: cover;
+        background-repeat: no-repeat;
+        color: white;
+        background-color: black;
+      }
+      .section-diferenciais * { 
+        color: white
       }
       .servico-a {
         height: 300px;
@@ -93,7 +104,15 @@
                   <ul class="rd-navbar-nav">
                     <li class="rd-nav-item active"><a class="rd-nav-link" href="index.html">Inicio</a>
                     </li>
-                    <li class="rd-nav-item"><a class="rd-nav-link" href="#">Softwares</a>
+                    <li class="rd-nav-item dropdown">
+                      <a class="rd-nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Software
+                      </a>
+                      <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <a class="dropdown-item" href="#">Gestão e faturação</a>
+                        <div class="dropdown-divider"></div>
+                        <a class="dropdown-item" href="#">Outro software</a>
+                      </div>
                     </li>
                     <li class="rd-nav-item"><a class="rd-nav-link" href="#">Análise de dados</a>
                     </li>
@@ -293,7 +312,7 @@
       </section>
 
       <!-- NOSSAS CARACTERISTICAS -->
-      <section class="section novi-background section-lg bg-gray-100">
+      <section class="section-diferenciais section novi-background section-lg bg-gray-100">
         <div class="container">
           <h2 class="h3 text-uppercase text-center wow slideInDown">
             Principais <strong><span class="text-primary">diferenciais</span></strong>
@@ -351,10 +370,10 @@
           </div>
         </div>
       </section>
-      <!-- Services-->
+      <!-- Comunidade -->
       <section class="section novi-background section-lg text-center">
         <div class="container">
-          <h3 class="text-uppercase text-primary">
+          <h3 class="text-uppercase text-primary wow slideInDown font-weight-bold">
             <i class="fa-solid fa-people-group"></i>
             Alta comunidade
           </h3>
@@ -388,20 +407,22 @@
           </div>
         </div>
       </section>
+
+      <!-- Nossa equipa -->
       <section class="section novi-background section-lg text-center bg-gray-100">
         <div class="container">
-          <h3 class="text-uppercase wow-outer"><span class="wow slideInUp">Our Team</span></h3>
+          <h3 class="text-uppercase wow-outer"><span class="wow slideInUp">Conheça a nossa equipa</span></h3>
           <div class="row row-lg-50 row-35 row-xxl-70 justify-content-center justify-content-lg-start">
             <div class="col-md-10 col-lg-6 wow-outer">
               <!-- Profile Creative-->
               <article class="profile-creative wow slideInLeft">
-                <figure class="profile-creative-figure"><img class="profile-creative-image" src="images/team-1-270x273.jpg" alt="" width="270" height="273"/>
+                <figure class="profile-creative-figure"><img class="profile-creative-image" src="images/people/pexels-justin-shaifer-1222271.jpg" alt="" width="270" height="273"/>
                 </figure>
                 <div class="profile-creative-main">
-                  <h5 class="profile-creative-title"><a href="#">Nathalie Porter</a></h5>
-                  <p class="profile-creative-position">Founder, Broker</p>
+                  <h5 class="profile-creative-title"><a href="#">Alberto Pedro</a></h5>
+                  <p class="profile-creative-position">Programador</p>
                   <div class="profile-creative-contacts">
-                    <div class="object-inline"><span class="icon novi-icon icon-md mdi mdi-phone"></span><a href="tel:#">1-800-1324-567</a></div>
+                    <div class="object-inline"><span class="icon novi-icon icon-md mdi mdi-phone"></span><a href="tel:#">954979242</a></div>
                   </div>
                   <p>Ms. Porter founded our company in 1989 with a vision to help guests and residents of the USA to easily find and buy or rent real estate in all 50 states.</p>
                 </div>
@@ -410,7 +431,7 @@
             <div class="col-md-10 col-lg-6 wow-outer">
               <!-- Profile Creative-->
               <article class="profile-creative wow slideInLeft" data-wow-delay=".2s">
-                <figure class="profile-creative-figure"><img class="profile-creative-image" src="images/team-2-270x273.jpg" alt="" width="270" height="273"/>
+                <figure class="profile-creative-figure"><img class="profile-creative-image" src="images/people/image.jpg" alt="" width="270" height="273"/>
                 </figure>
                 <div class="profile-creative-main">
                   <h5 class="profile-creative-title"><a href="#">John Thompson</a></h5>
@@ -425,7 +446,7 @@
             <div class="col-md-10 col-lg-6 wow-outer">
               <!-- Profile Creative-->
               <article class="profile-creative wow slideInLeft">
-                <figure class="profile-creative-figure"><img class="profile-creative-image" src="images/team-3-270x273.jpg" alt="" width="270" height="273"/>
+                <figure class="profile-creative-figure"><img class="profile-creative-image" src="images/people/portrait-3233851_1280.jpg" alt="" width="270" height="273"/>
                 </figure>
                 <div class="profile-creative-main">
                   <h5 class="profile-creative-title"><a href="#">Brian Payne</a></h5>
@@ -468,18 +489,39 @@
           </div>
         </div>
       </section>
+
+      <!-- AVALIAÇÕES -->
       <section class="section novi-background section-lg text-center">
         <div class="container">
-          <h3 class="wow-outer"><span class="wow slideInDown text-uppercase">Testimonials</span></h3>
+          <h3 class="wow-outer font-weight-bold">
+            <span class="wow slideInDown text-uppercase">
+              Avaliações
+            </span>
+            <div  style="color: #ffc107;">
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+            </div>
+          </h3>
+          <p class="wow slideInLeft text-dark font-weight-bold" style="font-size: 2em; color: #212121;">Melhor do que ouvir, é ver, a satisfação dos nossos clientes.</p>
+          <p class="wow slideInLeft text-dark">Observe abaixo o que as pessoas dizem sobre nós e obtenha um feedback sobre os serviços prestados</p>
           <!-- Owl Carousel-->
           <div class="owl-carousel wow fadeIn" data-items="1" data-md-items="2" data-lg-items="3" data-dots="true" data-nav="false" data-loop="true" data-autoplay="true" data-autoplay-speed="731" data-autoplay-timeout="4268" data-margin="30" data-stage-padding="0" data-mouse-drag="false">
             <blockquote class="quote-classic">
               <div class="quote-classic-meta">
-                <div class="quote-classic-avatar"><img src="images/testimonials-person-6-96x96.jpg" alt="" width="96" height="96"/>
+                <div class="quote-classic-avatar"><img src="images/people/image.jpg" alt="" width="96" height="96"/>
                 </div>
                 <div class="quote-classic-info">
                   <cite class="quote-classic-cite">Albert Webb</cite>
-                  <p class="quote-classic-caption">Regular Client</p>
+                  <p class="quote-classic-caption d-flex justify-content-between gap-5">
+                    <span  style="color: #ffc107;">
+                      <i class="fa-solid fa-star"></i>
+                      <i class="fa-solid fa-star"></i>
+                      <i class="fa-solid fa-star"></i>
+                    </span>
+                  </p>
                 </div>
               </div>
               <div class="quote-classic-text">
@@ -488,11 +530,19 @@
             </blockquote>
             <blockquote class="quote-classic">
               <div class="quote-classic-meta">
-                <div class="quote-classic-avatar"><img src="images/testimonials-person-1-96x96.jpg" alt="" width="96" height="96"/>
+                <div class="quote-classic-avatar"><img src="images/people/92648aa6398abf8a6386281833296b45.png" alt="" width="96" height="96"/>
                 </div>
                 <div class="quote-classic-info">
                   <cite class="quote-classic-cite">Kelly McMillan</cite>
-                  <p class="quote-classic-caption">Regular Client</p>
+                  <p class="quote-classic-caption d-flex justify-content-between gap-5">
+                    <span  style="color: #ffc107;">
+                      <i class="fa-solid fa-star"></i>
+                      <i class="fa-solid fa-star"></i>
+                      <i class="fa-solid fa-star"></i>
+                      <i class="fa-solid fa-star"></i>
+                      <i class="fa-solid fa-star"></i>
+                    </span>
+                  </p>
                 </div>
               </div>
               <div class="quote-classic-text">
@@ -501,7 +551,7 @@
             </blockquote>
             <blockquote class="quote-classic">
               <div class="quote-classic-meta">
-                <div class="quote-classic-avatar"><img src="images/testimonials-person-2-96x96.jpg" alt="" width="96" height="96"/>
+                <div class="quote-classic-avatar"><img src="images/people/portrait-3233851_1280.jpg" alt="" width="96" height="96"/>
                 </div>
                 <div class="quote-classic-info">
                   <cite class="quote-classic-cite">Harold Barnett</cite>
@@ -514,7 +564,7 @@
             </blockquote>
             <blockquote class="quote-classic">
               <div class="quote-classic-meta">
-                <div class="quote-classic-avatar"><img src="images/testimonials-person-3-96x96.jpg" alt="" width="96" height="96"/>
+                <div class="quote-classic-avatar"><img src="images/people/pexels-justin-shaifer-1222271.jpg" alt="" width="96" height="96"/>
                 </div>
                 <div class="quote-classic-info">
                   <cite class="quote-classic-cite">Bill Warner</cite>
@@ -552,55 +602,76 @@
               </div>
             </blockquote>
           </div>
+          <div class="m-5"><a href="#" class="btn" style="border: 1px solid #ffc107; color: #ffc107;">Deixe o seu feedback para nós </a></div>
         </div>
       </section>
+
+      <!-- RODAPÉ -->
       <footer class="section novi-background footer-advanced bg-gray-700">
         <div class="footer-advanced-main">
           <div class="container">
             <div class="row row-50">
-              <div class="col-lg-4">
-                <h5 class="font-weight-bold text-uppercase text-white">Sobre nós</h5>
+              <div class="wow slideInUp col-lg-3">
+                <h5 class="font-weight-bold text-uppercase text-white border-bottom p-2">Sobre nós</h5>
                 <p class="footer-advanced-text">inHouse is the largest full-service real estate and property management company. We offer expertise in the marketing and sale of a wide range of properties, including residential real estate, farms and lifestyle blocks, as well as commercial and industrial properties that we hope may interest you.</p>
               </div>
-              <div class="col-sm-7 col-md-5 col-lg-4">
-                <h5 class="font-weight-bold text-uppercase text-white">Recent Blog Posts</h5>
-                <!-- Post Inline-->
-                <article class="post-inline">
-                  <p class="post-inline-title"><a href="#">Real Estate Guide: 7 Important Tips for Buying a Home</a></p>
-                  <ul class="post-inline-meta">
-                    <li>by Mike Barnes</li>
-                    <li><a href="#">2 days ago</a></li>
-                  </ul>
-                </article>
-                <!-- Post Inline-->
-                <article class="post-inline">
-                  <p class="post-inline-title"><a href="#">Single-Family Homes as a Housing Option for Young Families</a></p>
-                  <ul class="post-inline-meta"> 
-                    <li>by Mike Barnes</li>
-                    <li><a href="#">2 days ago</a></li>
-                  </ul>
-                </article>
+              <div class="wow slideInUp col-sm-7 col-md-5 col-lg-3">
+                <h5 class="font-weight-bold text-uppercase text-white border-bottom p-2">Serviços</h5>
+                 <ul class="nav-menu">
+                    <li class="nav-item dropdown">
+                      <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Software
+                      </a>
+                      <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <a class="dropdown-item" href="#">Gestão e faturação</a>
+                        <div class="dropdown-divider"></div>
+                        <a class="dropdown-item" href="#">Outro software</a>
+                      </div>
+                    </li>
+                    <li class="nav-item"><a class="nav-link" href="#">E-mail corporativo</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">Criação de Websites</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">Análise de dados</a></li>
+                    <li class="nav-item dropdown">
+                      <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Domínios
+                      </a>
+                      <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <a class="dropdown-item" href="#">www.exemplo.com</a>
+                        <div class="dropdown-divider"></div>
+                        <a class="dropdown-item" href="#">www.exemplo.ao</a>
+                        <div class="dropdown-divider"></div>
+                        <a class="dropdown-item" href="#">www.exemplo.gov</a>
+                        <div class="dropdown-divider"></div>
+                        <a class="dropdown-item" href="#">www.exemplo.edu</a>
+                        <div class="dropdown-divider"></div>
+                        <a class="dropdown-item" href="#">Outro domínio</a>
+                      </div>
+                    </li>
+                 </ul>
+              </div>
+              <div class="wow slideInUp col-sm-7 col-md-5 col-lg-2">
+                <h5 class="font-weight-bold text-uppercase text-white border-bottom p-2">Parcerias</h5>
+                 <ul class="nav-menu">
+                    <li class="nav-item"><a class="nav-link" href="#">AngoWeb.ao</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">Google</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">Amazon</a></li>
+                 </ul>
               </div>
               <div class="col-sm-5 col-md-7 col-lg-4">
-                <h5 class="font-weight-bold text-uppercase text-white">Gallery</h5>
-                <div class="row row-x-10" data-lightgallery="group">
-                  <div class="col-3 col-sm-4 col-md-3"><a class="thumbnail-minimal" href="images/gallery-original-1.jpg" data-lightgallery="item"><img class="thumbnail-minimal-image" src="images/footer-gallery-1-85x85.jpg" alt=""/>
-                      <div class="thumbnail-minimal-caption"></div></a></div>
-                  <div class="col-3 col-sm-4 col-md-3"><a class="thumbnail-minimal" href="images/gallery-original-2.jpg" data-lightgallery="item"><img class="thumbnail-minimal-image" src="images/footer-gallery-2-85x85.jpg" alt=""/>
-                      <div class="thumbnail-minimal-caption"></div></a></div>
-                  <div class="col-3 col-sm-4 col-md-3"><a class="thumbnail-minimal" href="images/gallery-original-3.jpg" data-lightgallery="item"><img class="thumbnail-minimal-image" src="images/footer-gallery-3-85x85.jpg" alt=""/>
-                      <div class="thumbnail-minimal-caption"></div></a></div>
-                  <div class="col-3 col-sm-4 col-md-3"><a class="thumbnail-minimal" href="images/gallery-original-4.jpg" data-lightgallery="item"><img class="thumbnail-minimal-image" src="images/footer-gallery-4-85x85.jpg" alt=""/>
-                      <div class="thumbnail-minimal-caption"></div></a></div>
-                  <div class="col-3 col-sm-4 col-md-3"><a class="thumbnail-minimal" href="images/gallery-original-5.jpg" data-lightgallery="item"><img class="thumbnail-minimal-image" src="images/footer-gallery-5-85x85.jpg" alt=""/>
-                      <div class="thumbnail-minimal-caption"></div></a></div>
-                  <div class="col-3 col-sm-4 col-md-3"><a class="thumbnail-minimal" href="images/gallery-original-6.jpg" data-lightgallery="item"><img class="thumbnail-minimal-image" src="images/footer-gallery-6-85x85.jpg" alt=""/>
-                      <div class="thumbnail-minimal-caption"> </div></a></div>
-                  <div class="col-3 col-sm-4 col-md-3"><a class="thumbnail-minimal" href="images/gallery-original-7.jpg" data-lightgallery="item"><img class="thumbnail-minimal-image" src="images/footer-gallery-7-85x85.jpg" alt=""/>
-                      <div class="thumbnail-minimal-caption"></div></a></div>
-                  <div class="col-3 col-sm-4 col-md-3"><a class="thumbnail-minimal" href="images/gallery-original-8.jpg" data-lightgallery="item"><img class="thumbnail-minimal-image" src="images/footer-gallery-8-85x85.jpg" alt=""/>
-                      <div class="thumbnail-minimal-caption"></div></a></div>
-                </div>
+                <form action="#" class="wow slideInUp bg-white py-5 px-4 rounded border-box text-center" style="box-sizing: border-box; overflow: hidden; background-image: linear-gradient(to bottom, rgba(102, 6, 6, 0.466), rgba(94, 10, 10, 0.226));">
+                  <h5 class="font-weight-bold text-uppercase text-center" style="color: white;">NewsLetter</h5>
+                  <div class="p-2">
+                    <div class="input-group mb-1">
+                      <div class="input-group-prepend">
+                        <span class="input-group-text" id="basic-addon1" style="color: white;background-color: rgba(255, 0, 0, 0.966); border-color: rgba(255, 0, 0, 0.61);">@</span>
+                      </div>
+                      <input type="text" class="form-control" style=" border-color: rgba(255, 0, 0, 0.61);" placeholder="Username@gmail.com" aria-label="Username" aria-describedby="basic-addon1">
+                    </div>
+                    <div class="">
+                      <button class="btn text-white col-12" style=" background-color:red;">Concluido</button>
+                    </div>
+                  </div>
+                </form>
               </div>
             </div>
           </div>
@@ -611,9 +682,6 @@
               <div>
                 <ul class="list-nav"> 
                   <li><a href="index.html">Inicio</a></li>
-                  <!-- <li><a href="#">Softwares</a></li>
-                  <li><a href="#">Análise de dados</a></li>
-                  <li><a href="#">Criação de websites</a></li> -->
                   <li><a href="#">E-mail corporativo</a></li>
                   <li><a href="#">Domínios</a></li>
                 </ul>
@@ -621,8 +689,8 @@
               <div>
                 <ul class="foter-social-links list-inline list-inline-md">
                   <li><a class="icon novi-icon icon-sm link-default mdi mdi-facebook" href="#"></a></li>
-                  <!-- <li><a class="icon novi-icon icon-sm link-default mdi mdi-twitter" href="#"></a></li>
-                  <li><a class="icon novi-icon icon-sm link-default mdi mdi-instagram" href="#"></a></li> -->
+                  <li><a class="icon novi-icon icon-sm link-default mdi mdi-twitter" href="#"></a></li>
+                  <li><a class="icon novi-icon icon-sm link-default mdi mdi-instagram" href="#"></a></li>
                   <li><a class="icon novi-icon icon-sm link-default mdi mdi-google" href="#"></a></li>
                   <li><a class="icon novi-icon icon-sm link-default mdi mdi-linkedin" href="#"></a></li>
                 </ul>
@@ -634,11 +702,9 @@
           <hr/>
         </div>
         <div class="footer-advanced-aside">
-          <div class="container">
-            <!-- <div class="footer-advanced-layout"><a class="brand" href="index.html"><img src="images/logotipo.jpeg" alt="" width="115" height="34" srcset="images/logo-light-115x34.png 2x"/></a> -->
+          <div class="container">            
               <!-- Rights-->
-              <p class="rights"><span>&copy;&nbsp;</span><span class="copyright-year"></span>. All Rights Reserved. Design by <a href="https://www.templatemonster.com">TemplateMonster</a></p>
-            </div>
+              <p class="rights text-center"><span>&copy;&nbsp;</span><span class="copyright-year"></span>. Kima soluções Tecnológicas. todos os direitos reservados</p>
           </div>
         </div>
       </footer>
